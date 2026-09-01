@@ -90,7 +90,9 @@
 
   <section class="hero" id="home">
     <div class="hero-media">
-      <img src="assets/images/ig-croissant-01.jpg" alt="קרואסון טרי וכוס קפה עם לוגו בית לחם" loading="eager">
+      <video autoplay muted loop playsinline poster="assets/video/hero-dough-poster.jpg" aria-label="ידיים מפזרות קמח על בצק בבית לחם">
+        <source src="assets/video/hero-dough.mp4" type="video/mp4">
+      </video>
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content reveal">
@@ -292,7 +294,15 @@
             <span class="info-icon"><svg class="icon"><use href="#icon-clock"></use></svg></span>
             <div>
               <h3>שעות פתיחה</h3>
-              <p>פתוח כל יום עד השעה 21:00 (מומלץ לוודא שעות פתיחה מדויקות לפני הגעה)</p>
+              <ul class="hours-table" id="hoursTable">
+                <li data-day="0"><span>יום ראשון</span><span>7:00–21:00</span></li>
+                <li data-day="1"><span>יום שני</span><span>7:00–21:00</span></li>
+                <li data-day="2"><span>יום שלישי</span><span>7:00–21:00</span></li>
+                <li data-day="3"><span>יום רביעי</span><span>7:00–21:00</span></li>
+                <li data-day="4"><span>יום חמישי</span><span>7:00–21:00</span></li>
+                <li data-day="5"><span>יום שישי</span><span>7:00–17:30</span></li>
+                <li data-day="6"><span>יום שבת</span><span class="closed">סגור</span></li>
+              </ul>
             </div>
           </li>
           <li>

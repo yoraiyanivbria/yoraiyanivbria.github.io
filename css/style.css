@@ -181,7 +181,7 @@ img { max-width: 100%; display: block; }
   color: #fff;
 }
 .hero-media { position: absolute; inset: 0; z-index: 0; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-media img, .hero-media video { width: 100%; height: 100%; object-fit: cover; }
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -456,6 +456,30 @@ img { max-width: 100%; display: block; }
 }
 .info-list h3 { font-size: 1rem; margin-bottom: 0.2em; }
 .info-list p { margin: 0; }
+
+.hours-table {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  font-size: 0.92rem;
+}
+.hours-table li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: var(--ink-soft);
+}
+.hours-table li span:last-child { font-weight: 600; color: var(--ink); }
+.hours-table li .closed { color: var(--amber-dark); }
+.hours-table li.today {
+  background: var(--cream-2);
+  color: var(--crust-dark);
+}
+.hours-table li.today span:first-child { font-weight: 700; color: var(--crust-dark); }
 .location-map iframe {
   width: 100%;
   height: 420px;

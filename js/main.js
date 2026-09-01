@@ -86,5 +86,12 @@ if (reviewsTrack && reviewPrev && reviewNext) {
   reviewPrev.addEventListener('click', () => scrollByCard(-1));
 }
 
+// Highlight today's opening hours
+const hoursTable = document.getElementById('hoursTable');
+if (hoursTable) {
+  const todayRow = hoursTable.querySelector(`li[data-day="${new Date().getDay()}"]`);
+  if (todayRow) todayRow.classList.add('today');
+}
+
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
