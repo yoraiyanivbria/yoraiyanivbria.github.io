@@ -6,7 +6,7 @@
   --ink: #2B1B12;
   --ink-soft: #5A4638;
   --crust: #6B3A22;
-  --crust-dark: #4A2818;
+  --crust-dark: #3A1D10;
   --amber: #D98A3D;
   --amber-dark: #B96B24;
   --line: #E7DCC7;
@@ -107,7 +107,8 @@ img { max-width: 100%; display: block; }
   gap: 16px;
 }
 .topbar-inner span, .topbar-inner a { display: inline-flex; align-items: center; gap: 6px; }
-.topbar a:hover { color: var(--amber); }
+.topbar a { text-decoration: underline; text-decoration-color: rgba(239, 226, 206, 0.4); text-underline-offset: 3px; }
+.topbar a:hover { color: var(--amber); text-decoration-color: var(--amber); }
 
 /* ===== Header / Nav ===== */
 .site-header {
